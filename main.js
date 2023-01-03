@@ -20,9 +20,9 @@ var originalContent = '';
 $(window).resize(function() {
 if (window.innerWidth < 480) {
 
-    originalContent = $('.ctc').innerHTML;
+    originalContent = $('.ctc_button').innerHTML;
 
-    $('.LatestNews').replaceWith('<h3><a href="">News Link</a></h3>');
+    $('.ctc_button').replaceWith('<a class="ctc_button" href=""><i class="fa-solid fa-calendar-days"></i></a>');
 
 } else if (window.innerWidth > 480) {
 
