@@ -14,19 +14,3 @@ function handlePageLoaded(){
         document.getElementById("loading-screen").style.display = "none";
     }, 1000)
 }
-
-var originalContent = '';
-
-$(window).resize(function() {
-if (window.innerWidth < 480) {
-
-    originalContent = $('.ctc_button').innerHTML;
-
-    $('.ctc_button').replaceWith('<a class="ctc_button" href="https://calendly.com/ykumat/30min"><i class="fa-regular fa-calendar-check"></i></a>');
-
-} else if (window.innerWidth > 480) {
-
-    // Change back to original .LatestNews
-    $('.LatestNews').innerHTML = originalContent;
-}
-}).resize();
