@@ -22,7 +22,7 @@ if (window.innerWidth < 480) {
 
     originalContent = $('.ctc_button').innerHTML;
 
-    $('.ctc_button').replaceWith('<a class="ctc_button" href="https://calendly.com/ykumat/30min"><i class="fa-solid fa-calendar-days"></i></a>');
+    $('.ctc_button').replaceWith('<a class="ctc_button" href="https://calendly.com/ykumat/30min"><i class="fa-regular fa-calendar-check"></i></a>');
 
 } else if (window.innerWidth > 480) {
 
